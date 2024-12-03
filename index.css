@@ -76,7 +76,7 @@ header {
 }
 
 #logo {
-    font-size: 20px; /* Logo font size */
+    font-size: 15px; /* Logo font size */
     margin-top: 0; /* Remove margin from the top */
     position: fixed; /* Keep the logo fixed on the screen */
 }
@@ -152,4 +152,33 @@ ol {
 
 p {
     margin: auto; /* Center paragraphs horizontally */
+}
+
+/* FORM INPUTS - FLEXIBLE STYLING */
+form input {
+    width: 100%; /* Use full width of the parent container */
+    max-width: 400px; /* Limit the maximum width */
+    min-width: 150px; /* Ensure a minimum width */
+    padding: 8px; /* Add inner spacing for comfortable typing */
+    margin: 5px 0; /* Space between input fields */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    border: 1px solid #ccc; /* Subtle border for input */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 16px; /* Font size for readability */
+}
+
+/* BUTTONS */
+form button {
+    padding: 10px 20px; /* Comfortable size for buttons */
+    font-size: 16px; /* Match font size with input fields */
+    background-color: #393E46; /* Dark background for buttons */
+    color: #FFFFFF; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+form button:hover {
+    background-color: #555; /* Darker background on hover */
 }
