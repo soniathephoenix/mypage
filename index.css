@@ -154,23 +154,33 @@ p {
     margin: auto; /* Center paragraphs horizontally */
 }
 
-/* FORM INPUTS - FLEXIBLE STYLING */
+/* FORM CONTAINER */
+form {
+    width: 100%; /* Form takes the full width of its container */
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 10px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* INPUT FIELDS */
 form input {
-    width: 100%; /* Use full width of the parent container */
-    max-width: 400px; /* Limit the maximum width */
-    min-width: 150px; /* Ensure a minimum width */
-    padding: 8px; /* Add inner spacing for comfortable typing */
-    margin: 5px 0; /* Space between input fields */
-    box-sizing: border-box; /* Include padding and border in the total width */
-    border: 1px solid #ccc; /* Subtle border for input */
-    border-radius: 4px; /* Slightly rounded corners */
-    font-size: 16px; /* Font size for readability */
+    width: 100%; /* Input fields adjust to the width of the form */
+    max-width: 100%; /* Ensure inputs never exceed form width */
+    min-width: 150px; /* Set a reasonable minimum width */
+    padding: 8px; /* Add inner spacing */
+    box-sizing: border-box; /* Include padding in width */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Consistent text size */
 }
 
 /* BUTTONS */
 form button {
-    padding: 10px 20px; /* Comfortable size for buttons */
-    font-size: 16px; /* Match font size with input fields */
+    width: 100%; /* Button also adjusts to full width on smaller screens */
+    max-width: 100%; /* Prevent button from exceeding the form's width */
+    padding: 10px 20px; /* Comfortable padding for buttons */
+    font-size: 16px; /* Font size matching input fields */
     background-color: #393E46; /* Dark background for buttons */
     color: #FFFFFF; /* White text for contrast */
     border: none; /* Remove default border */
@@ -181,4 +191,15 @@ form button {
 
 form button:hover {
     background-color: #555; /* Darker background on hover */
+}
+
+/* MOBILE-SPECIFIC ADJUSTMENTS */
+@media (max-width: 768px) {
+    form {
+        padding: 5px; /* Reduce padding on smaller screens */
+    }
+
+    form input, form button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
 }
