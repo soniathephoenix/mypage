@@ -1,92 +1,93 @@
-<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
-<html lang="en"> <!-- Specifies the language of the document as English -->
+<!DOCTYPE html> <!-- Declares the document type and specifies the version of HTML (HTML5 in this case) -->
+<html lang="en"> <!-- Root element of the document, with the language attribute set to English -->
 <head>
-    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
-    <link rel="stylesheet" href="index.css"> <!-- Links to an external CSS file for styling -->
-    <title>Sonia's page</title> <!-- Sets the title of the webpage (appears in the browser tab) -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document (UTF-8 supports most characters worldwide) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Enables responsive design by setting the viewport size -->
+    <link rel="stylesheet" href="index.css"> <!-- Links an external CSS file for styling the page -->
+    <title>Sonia's page</title> <!-- Sets the title of the webpage, which appears in the browser tab -->
 </head>
 <body>
     <!-- Main header section -->
-    <header id="home">
-        <nav> <!-- Navigation bar for the website -->
-            <ul> <!-- Unordered list for navigation items -->
-                <!-- List items (links) for the navigation bar -->
-                <li class="navbar"><a>Home</a></li>
-                <li class="navbar"><a href="#about-me">About me</a></li> <!-- Links to the "About me" section -->
-                <li class="navbar"><a href="#hobbies">Hobbies</a></li> <!-- Links to the "Hobbies" section -->
-                <li class="navbar"><a href='index2.html' target="_blank">My pets</a></li> <!-- Links to a new page about pets -->
+    <header id="home"> <!-- Header element representing introductory content or navigation links -->
+        <h1 id="logo">My page</h1> <!-- Main title or logo for the website -->
+        <nav> <!-- Navigation bar for website navigation -->
+            <ul> <!-- Unordered list for navigation links -->
+                <li class="navbar"><a>Home</a></li> <!-- Home link (currently no href) -->
+                <li class="navbar"><a href="#about-me">About me</a></li> <!-- Link to the "About me" section -->
+                <li class="navbar"><a href="#hobbies">Hobbies</a></li> <!-- Link to the "Hobbies" section -->
+                <li class="navbar"><a href='index2.html' target="_blank">My pets</a></li> <!-- Link to a new page about pets, opens in a new tab -->
             </ul>
         </nav>
     </header>
 
     <!-- Main content section -->
     <main>
-        <!-- Profile picture and caption -->
-        <figure>
+        <!-- Profile picture and introductory caption -->
+        <figure> <!-- Semantic container for an image and its caption -->
             <img src="_MG_1247.jpg" alt="Sonia's profile picture"> <!-- Profile image -->
-            <figcaption> <!-- Caption for the profile picture -->
-                <h1>Hi, I'm Sonia!</h1> <!-- Introduces the user -->
+            <figcaption> <!-- Caption providing context to the image -->
+                <h1>Hi, I'm Sonia!</h1> <!-- Introduction -->
             </figcaption>
         </figure>
 
-        <!-- Section for "About me" and an aside form -->
-        <div id="about-me-and-aside">
+        <!-- Section combining "About me" and a form in the aside element -->
+        <div id="about-me-and-aside"> <!-- Container for "About me" section and the aside -->
             <section id="about-me"> <!-- "About me" section -->
-                <h2 class="title">About me</h2> <!-- Title for the about me section -->
-                <p> &nbsp;Originally from Portugal, I moved to London 13 years ago and have 
-                    embraced life’s adventures ever since. Staying active and curious 
+                <h2 class="title">About me</h2> <!-- Title for the section -->
+                <p> <!-- Paragraph describing the user -->
+                    &nbsp;Originally from Portugal, I moved to London 13 years ago and have 
+                    embraced life’s adventures ever since. <br><br> &nbsp;Staying active and curious 
                     defines me—whether it’s pickleball, surfing, or learning piano. 
-                    I love exploring personal growth through fitness, books, and creative 
+                    <br><br> &nbsp;I love exploring personal growth through fitness, books, and creative 
                     pursuits like theatre. For me, life is all about growth, connection, and 
-                    new challenges.</p> <!-- Describes the user's background and hobbies -->
+                    new challenges.
+                </p>
             </section>
-            <aside> <!-- Aside element containing a form -->
-                <h2>Want to collaborate on projects? Leave your details below.</h2> <!-- Heading for the form section -->
-                <form action="/submit" method="POST"> <!-- Form for user to submit information -->
-                    <label for="name">Name:</label><br><br> <!-- Label and input field for name -->
-                    <input type="text" id="name" name="name" required placeholder="John Smith"><br><br> <!-- Text input for name -->
-                    <label for="email">Email:</label><br><br> <!-- Label and input field for email -->
-                    <input type="email" id="email" name="email" required placeholder="John@Smith.com"><br><br> <!-- Email input -->
-                    <button type="submit">Submit</button> <!-- Submit button for the form -->
+            <aside> <!-- Sidebar for additional content, in this case, a contact form -->
+                <h2>Want to collaborate on projects? Leave your details below.</h2> <!-- Title for the form -->
+                <form action="/submit" method="POST"> <!-- Form for collecting user input -->
+                    <label for="name">Name:</label><br><br> <!-- Input label for name -->
+                    <input type="text" id="name" name="name" required placeholder="John Smith"><br><br> <!-- Text field for user name -->
+                    <label for="email">Email:</label><br><br> <!-- Input label for email -->
+                    <input type="email" id="email" name="email" required placeholder="John@Smith.com"><br><br> <!-- Email input field -->
+                    <button type="submit">Submit</button> <!-- Submit button -->
                 </form>
             </aside>
         </div>
 
-        <!-- Hobbies section -->
+        <!-- Section for hobbies -->
         <section id="hobbies">
-            <h2 class="title">Hobbies</h2> <!-- Title for hobbies section -->
-            <ol> <!-- Ordered list for hobbies -->
-                <div> <!-- First set of hobbies -->
-                    <li>sports and fitness</li>
-                    <li>reading books</li>
-                    <li>piano</li>
+            <h2 class="title">Hobbies</h2> <!-- Title of the hobbies section -->
+            <ol> <!-- Ordered list of hobbies -->
+                <div> <!-- First group of hobbies -->
+                    <li>sports and fitness</li> <!-- Hobby item -->
+                    <li>reading books</li> <!-- Hobby item -->
+                    <li>piano</li> <!-- Hobby item -->
                 </div>
-                <div> <!-- Second set of hobbies -->
-                    <li>theatre</li>
-                    <li>walks with friends</li>
-                    <li>cuddling with my hamster</li>
+                <div> <!-- Second group of hobbies -->
+                    <li>theatre</li> <!-- Hobby item -->
+                    <li>walks with friends</li> <!-- Hobby item -->
+                    <li>cuddling with my hamster</li> <!-- Hobby item -->
                 </div>
             </ol>
         </section>
 
         <!-- Books section -->
         <h2>Books I recommend</h2> <!-- Title for the books section -->
-        <table> <!-- Table displaying book recommendations -->
-            <tr> <!-- Table header row -->
-              <th>Book title</th>
-              <th>Author</th>
-              <th>Genre</th>
-              <th>Year</th>
+        <table> <!-- Table listing recommended books -->
+            <tr> <!-- Header row for the table -->
+              <th>Book title</th> <!-- Column heading for book title -->
+              <th>Author</th> <!-- Column heading for author -->
+              <th>Genre</th> <!-- Column heading for genre -->
+              <th>Year</th> <!-- Column heading for publication year -->
             </tr>
-            <!-- Table rows with data for each book -->
-            <tr>
-              <td>How we live is how we die</td>
-              <td>Pema Chodron</td>
-              <td>Personal development</td>
-              <td>2022</td>
+            <tr> <!-- Data row for a book -->
+              <td>How we live is how we die</td> <!-- Book title -->
+              <td>Pema Chodron</td> <!-- Author -->
+              <td>Personal development</td> <!-- Genre -->
+              <td>2022</td> <!-- Year -->
             </tr>
-            <tr>
+            <tr> <!-- Data row for another book -->
               <td>Elon Musk</td>
               <td>Walter Isaacson</td>
               <td>Biography</td>
@@ -95,9 +96,9 @@
         </table>
     </main>
 
-    <!-- Footer section with back to top link -->
+    <!-- Footer with a link to scroll back to the top -->
     <footer>
-        <h3><a href="#">Back to top</a></h3> <!-- Link to scroll back to the top of the page -->
+        <h3><a href="#">Back to top</a></h3> <!-- Link that takes the user back to the top of the page -->
     </footer>
 </body>
 </html>
