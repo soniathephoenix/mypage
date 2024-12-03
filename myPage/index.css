@@ -1,0 +1,146 @@
+/* GLOBAL STYLES */
+body {
+    background-color: #F7F7F7; /* Light background color */
+    color: #393E46; /* Dark text color for readability */
+    margin: 20px; /* Spacing around the content */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Serif font for text */
+}
+
+/* TYPOGRAPHY */
+h2 {
+    font-size: 20px; /* Set font size for subheadings */
+}
+
+figcaption {
+    text-align: center; /* Center align the caption */
+    font-size: 15px; /* Smaller font size for captions */
+}
+
+footer {
+    border-top: 1px solid #393E46; /* Top border for footer */
+    font-size: small; /* Smaller text for footer */
+    text-align: center; /* Center align footer text */
+}
+
+/* LINKS */
+a {
+    color: #393E46; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    outline: 1px solid #393E46; /* Outline when hovered */
+    background-color: #EEEEEE; /* Light background when hovered */
+}
+
+/* NAVIGATION */
+nav {
+    display: flex; /* Use flexbox for navigation layout */
+    justify-content: center; /* Center the nav items */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display list items in a row */
+    align-items: center; /* Vertically align items in the center */
+}
+
+li {
+    margin: 0 10px; /* Space between list items */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.navbar:not(:last-child)::after {
+    content: "|"; /* Add separator between nav items */
+    position: absolute; /* Position separator */
+    right: -15px; /* Position it at the right of the item */
+    color: #000; /* Color of the separator */
+}
+
+/* IMAGES */
+img {
+    border: 3px solid #393E46; /* Border around images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow around images */
+    margin: auto; /* Center image */
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* LAYOUT */
+header {
+    font-size: large; /* Larger font size for header */
+}
+
+/* Flexbox layout for About Me and Aside sections */
+#about-me-and-aside {
+    display: flex; /* Flex layout for side-by-side display */
+    gap: 20px; /* Space between the section and the aside */
+    margin-top: 40px; /* Space above the sections */
+    margin-bottom: 40px; /* Space below the sections */
+}
+
+#about-me {
+    flex: 2; /* Give more space to the About Me section */
+    padding: 10px; /* Add padding around the section */
+    background-color: #EEEEEE; /* Light background color */
+    min-width: 0; /* Prevent overflow */
+}
+
+aside {
+    flex: 1; /* Give less space to the aside */
+    background-color: #EEEEEE; /* Light background color */
+    padding: 15px; /* Add padding inside the aside */
+    border: 2px solid #393E46; /* Border around the aside */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    min-width: 0; /* Prevent overflow */
+}
+
+/* TABLE */
+table {
+    width: 100%; /* Table takes full width */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin-bottom: 40px; /* Space below the table */
+    font-size: 16px; /* Font size for table content */
+    text-align: left; /* Left-align table content */
+}
+
+th, td {
+    padding: 12px 15px; /* Add padding inside table cells */
+    border: 1px solid #ddd; /* Border around table cells */
+}
+
+th {
+    background-color: #393E46; /* Dark background for table headers */
+    color: #FFFFFF; /* White text color for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Slightly darker on hover */
+}
+
+/* LISTS */
+ol {
+    display: flex; /* Display ordered list items in a row */
+    gap: 10%; /* Space between list items */
+    margin-bottom: 40px; /* Space below the list */
+}
+
+#page-two-header {
+    text-align: center; /* Center align the page two header */
+    font-size: 15px; /* Set font size for the header */
+}
+
+.pets-display {
+    display: flex; /* Display items in a flex row */
+}
+
+p {
+    margin: auto; /* Center paragraphs horizontally */
+}
