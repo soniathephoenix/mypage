@@ -18,6 +18,11 @@ function enableDarkMode() {
         element.style.borderColor = '#FFD700'; // White borders for table and aside
         element.style.color = 'black';
     });
+
+    const tableText = document.querySelectorAll('th');
+    tableText.forEach(element => {
+        element.style.color = 'white';
+    })
 }
 
 // Function to enable light mode
