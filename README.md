@@ -92,10 +92,8 @@ To run this project locally:
 
 ## 📧 Contact
 
-If you’re interested in collaborating, feel free to reach out!
-
 - **LinkedIn**: https://www.linkedin.com/in/sonia-pires-467625184/
-- **Email**: [Your Email Address](mailto:soniacodesloads@gmail.com)
+- **Email**: mailto:soniacodesloads@gmail.com
 
 ---
 
